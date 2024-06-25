@@ -1,0 +1,1832 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "REM", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); */
+
+
+.menu {
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.menu .logo{
+    width: 15%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    position: relative;
+}
+
+.menu .logo img{
+    width: 98px;
+    height: 31px;
+    object-fit: cover;
+    position: absolute;
+    top: 28%;
+    left: 20%;
+
+    /* background-color: blue; */
+}
+
+.menu .link {
+    width: 65%;
+    height: 100px;
+    /* background-color: blueviolet; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .link ul {
+    display: flex;
+    
+}
+
+.menu .link ul li{
+    list-style-type: none;
+}
+
+.menu .link ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu .link ul li a::before{
+    content: "";
+    background-color: brown;
+    width: 0%;
+    height: 3px;
+    bottom: -10px;
+    right: 50%;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.menu .link ul li a::after{
+    content: "";
+    background-color: brown;
+    width: 0%;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    position: absolute;
+    transition: 0.4s;
+}
+
+
+.menu .link ul li a:hover::before{
+    width: 50%;
+    height: 3px;
+    transition: 0.4s;
+}
+
+.menu .link ul li a:hover::after{
+    width: 50%;
+    height: 3px;
+    transition: 0.4s;
+}
+
+#home::before{
+    content: "";
+    background-color: brown;
+    width: 50%;
+    height: 3px;
+    bottom: -10px;
+    right: 50%;
+    position: absolute;
+    transition: 0.4s;
+}
+
+#home::after{
+    content: "";
+    background-color: brown;
+    width: 50%;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.menu .login {
+    width: 10%;
+    height: 100%;
+    /* background-color: brown; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .login p{
+    color: gray;
+}
+
+.menu .icon{
+    width: 10%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+}
+
+.menu .icon .search{
+    width: 33%;
+    height: 100%;
+    /* background-color: rgb(210, 135, 222); */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.menu .icon .heart{
+    width: 33%;
+    height: 100%;
+    /* background-color: burlywood; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu .icon .bag{
+    width: 33%;
+    height: 100%;
+    /* background-color: rgb(152, 222, 135); */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.menu .icon .heart .numtwo{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(63, 62, 62);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+
+}
+
+.menu .icon .heart .numtwo p{
+    color: white;
+    font-size: 15px;
+   
+}
+
+.menu .icon .bag .numtwo{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(63, 62, 62);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 7px;
+
+}
+
+.menu .icon .bag .numtwo p{
+    color: white;
+    font-size: 15px;
+   
+}
+
+.box1{
+    width: 100%;
+    height: 900px;
+    /* background-color: aqua; */
+   display: flex; 
+   justify-content: space-between;
+}
+
+.box1-left{
+    width: 49%;
+    height: 100%;
+    /* background-color: bisque; */
+    position: relative;
+}
+
+.box1 .box1-left h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    font-size: 70px;
+    top: 250px;
+    left: 100px;
+}
+
+.box1 .box1-left p {
+    color: gray;
+    position: absolute;
+    left: 100px;
+    top: 380px;
+    width: 550px;
+}
+
+.box1 .box1-left .p1{
+    color: gray;
+    position: absolute;
+    left: 100px;
+    top: 410px;
+    width: 550px;
+}
+
+.box1 .box1-left ul li{
+    list-style-type: none;
+    position: absolute;
+}
+
+.box1 .box1-left ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    top: 470px;
+    left: 100px;
+    width: 117px;
+    position: absolute;
+    /* background-color: aqua; */
+}
+
+.box1 .box1-left ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box1 .box1-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.box1-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(0, 255, 136); */
+    /* display: flex; */
+}
+
+.box1 .box1-right .right-up{
+    width: 100%;
+    height: 49%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1 .box1-right .right-up .right-up-left{
+    width: 49%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.box1 .box1-right .right-up .right-up-left h1{
+    position: absolute;
+    font-size: 30px;
+    top: 140px;
+    left: 50px;
+}
+
+.box1 .box1-right .right-up .right-up-left p {
+    color: gray;
+    position: absolute;
+    left: 50px;
+    top: 190px;
+    /* background-color: aqua; */
+}
+
+.box1 .box1-right .right-up .right-up-left ul li{
+    list-style-type: none;
+    position: absolute;
+}
+
+.box1 .box1-right .right-up .right-up-left ul li a {
+    text-decoration: none;
+    position: absolute;
+    width: 117px;
+    top: 230px;
+    left: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+.box1 .box1-right .right-up .right-up-left ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box1 .box1-right .right-up .right-up-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.box1 .box1-right .right-up .right-up-right{
+    width: 49%;
+    height: 100%;
+    background-color: rgb(255, 34, 0);
+    position: relative;
+}
+
+.box1 .box1-right .right-up .right-up-right h1{
+    position: absolute;
+    font-size: 30px;
+    top: 140px;
+    left: 50px;
+}
+
+.box1 .box1-right .right-up .right-up-right p {
+    color: gray;
+    position: absolute;
+    left: 50px;
+    top: 190px;
+    /* background-color: aqua; */
+}
+
+.box1 .box1-right .right-up .right-up-right ul li{
+    list-style-type: none;
+    position: absolute;
+}
+
+.box1 .box1-right .right-up .right-up-right ul li a {
+    text-decoration: none;
+    position: absolute;
+    width: 117px;
+    top: 230px;
+    left: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+.box1 .box1-right .right-up .right-up-right ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+
+
+
+
+
+
+.box1 .box1-right .right-up .right-up-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+
+
+.box1 .box1-right .right-down{
+    width: 100%;
+    height: 49%;
+    /* background-color: rgb(165, 42, 124); */
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1 .box1-right .right-down .right-down-left{
+    width: 49%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.box1 .box1-right .right-down .right-down-left h1{
+    position: absolute;
+    font-size: 30px;
+    top: 140px;
+    left: 50px;
+}
+
+.box1 .box1-right .right-down .right-down-left p {
+    color: gray;
+    position: absolute;
+    left: 50px;
+    top: 190px;
+    /* background-color: aqua; */
+}
+
+.box1 .box1-right .right-down .right-down-left ul li{
+    list-style-type: none;
+    position: absolute;
+}
+
+.box1 .box1-right .right-down .right-down-left ul li a {
+    text-decoration: none;
+    position: absolute;
+    width: 117px;
+    top: 230px;
+    left: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+.box1 .box1-right .right-down .right-down-left ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+
+
+
+
+
+
+.box1 .box1-right .right-down .right-down-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+
+
+
+
+.box1 .box1-right .right-down .right-down-right{
+    width: 49%;
+    height: 100%;
+    background-color: rgb(255, 34, 0);
+    position: relative;
+}
+
+
+.box1 .box1-right .right-down .right-down-right h1{
+    position: absolute;
+    font-size: 30px;
+    top: 140px;
+    left: 50px;
+}
+
+.box1 .box1-right .right-down .right-down-right p {
+    color: gray;
+    position: absolute;
+    left: 50px;
+    top: 190px;
+    /* background-color: aqua; */
+}
+
+.box1 .box1-right .right-down .right-down-right ul li{
+    list-style-type: none;
+    position: absolute;
+}
+
+.box1 .box1-right .right-down .right-down-right ul li a {
+    text-decoration: none;
+    position: absolute;
+    width: 117px;
+    top: 230px;
+    left: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+.box1 .box1-right .right-down .right-down-right ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box1 .box1-right .right-down .right-down-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.box2{
+    width: 100%;
+    height: 1750px;
+    /* background-color: aqua; */
+    padding: 0px 100px;
+}
+
+.box2 .box2-menu{
+    width: 100%;
+    height: 150px;
+    /* background-color: azure; */
+    justify-content: space-between;
+    display: flex;
+}
+
+.box2 .box2-menu .title{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    align-items: center;
+    display: flex;
+    /* position: relative; */
+}
+
+.box2 .box2-menu .title p{
+    color: black;
+    font-size: 30px;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+.box2 .box2-menu .title p::before{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    bottom: -5px;
+}
+
+.box2 .box2-menu .link{
+    width: 43%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    align-items: center;
+    display: flex;
+}
+
+.box2 .box2-menu .link ul{
+    display: flex;
+}
+
+.box2 .box2-menu .link ul li{
+    list-style-type: none;
+}
+
+.box2 .box2-menu .link ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.box2 .box2-menu .link ul li a::before{
+    content: "";
+    width: 0%;
+    position: absolute;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box2 .box2-menu .link ul li a:hover::before{
+    width: 100%;
+}
+
+#all::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box2 .box2-product{
+    width: 100%;
+    height: 800px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 .box2-product .p1{
+    width: 24%;
+    height: 800px;
+    /* background-color: blueviolet; */
+}
+
+.box2 .box2-product .p1 .p1-up{
+    width: 100%;
+    height: 600px;
+    background-color: brown;
+    position: relative;
+    overflow: hidden;
+}
+
+.box2 .box2-product .p1 .p1-up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.box2 .box2-product .p1 .p1-up .new{
+    width: 65px;
+    height: 30px;
+    background-color: green;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 15px;
+    left: 15px;
+}
+
+.box2 .box2-product .p1 .p1-up .new p{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+}
+
+.box2 .box2-product .p1 .p1-up .share ul li{
+    list-style-type: none;
+}
+
+.box2 .box2-product .p1 .p1-up .share ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.box2 .box2-product .p1 .p1-up .share{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 300;
+    top: 600px;
+    left: 80px;
+    transition: 0.2s;
+}
+
+.box2 .box2-product .p1 .p1-up .share:hover {
+    background-color: rgb(225, 53, 53);
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.box2 .box2-product .p1 .p1-up .share:hover a{
+    color: white;
+}
+
+.box2 .box2-product .p1 .p1-up:hover .share{
+    top: 500px;
+    transition: 0.2s;
+}
+
+.box2 .box2-product .p1 .p1-up .heart{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    top: 600px;
+    left: 160px;
+    transition: 0.4s;
+}
+
+.box2 .box2-product .p1 .p1-up:hover .heart{
+    top: 500px;
+    transition: 0.4s;
+}
+
+.box2 .box2-product .p1 .p1-up .heart:hover {
+    background-color: rgb(225, 53, 53);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.box2 .box2-product .p1 .p1-up .heart:hover a{
+    color: white;
+}
+
+.box2 .box2-product .p1 .p1-up .heart ul li{
+    list-style-type: none;
+}
+
+.box2 .box2-product .p1 .p1-up .heart ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.box2 .box2-product .p1 .p1-up .bag{
+    /* color: black; */
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    top: 600px;
+    left: 240px;
+    transition: 0.6s;
+}
+
+.box2 .box2-product .p1 .p1-up:hover .bag{
+    top: 500px;
+    transition: 0.6s;
+}
+
+.box2 .box2-product .p1 .p1-up .bag:hover {
+    background-color: rgb(225, 53, 53);
+    transform: rotate(360deg);
+    transition: 0.6ss;
+}
+
+.box2 .box2-product .p1 .p1-up .bag:hover a{
+    color: white;
+}
+
+.box2 .box2-product .p1 .p1-up .bag ul li{
+    list-style-type: none;
+}
+
+.box2 .box2-product .p1 .p1-up .bag ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.box2 .box2-product .p1 .p1-down{
+    width: 100%;
+    height: 200px;
+    /* background-color: cadetblue; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.box2 .box2-product .p1 .p1-down .name{
+    color: gray;
+    top: 30px;
+    position: absolute;
+}
+
+.box2 .box2-product .p1 .p1-down .name p{
+    color: gray;
+    font-size: 20px;
+}
+
+.box2 .box2-product .p1 .p1-down .rate{
+    color: gold;
+    position: absolute;
+    top: 60px;
+}
+
+.box2 .box2-product .p1 .p1-down .price{
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+}
+
+.out{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 15px;
+    left: 15px;
+}
+
+.out p{
+    color: white;
+}
+
+.box2 .box2-product2{
+    width: 100%;
+    height: 800px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box2 .box2-product2 .p1 .p1-up {
+    width: 65px;
+    height: 30px;
+    background-color: green;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 15px;
+    left: 15px;
+    overflow: hidden;
+}
+
+.box2 .box2-product2 .p1 .p1-up .share ul li{
+    list-style-type: none;
+}
+
+.box2 .box2-product2 .p1 .p1-up .share ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.box2 .box2-product2 .p1 .p1-up .share{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    top: 600px;
+    left: 80px;
+    transition: 0.2s;
+}
+
+.box2 .box2-product2 .p1 .p1-up .share:hover a{
+    color: white;
+}
+
+.box2 .box2-product2 .p1 .p1-up:hover .share{
+    top: 500px;
+    transition: 0.2s;
+}
+
+.box2 .box2-product2 .p1 .p1-up .share:hover {
+    background-color: rgb(225, 53, 53);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+
+.box2 .box2-product2 .p1 .p1-up .heart{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    top: 600px;
+    left: 160px;
+    transition: 0.4s;
+}
+
+
+.box2 .box2-product2 .p1 .p1-up .heart:hover a{
+    color: white;
+}
+
+.box2 .box2-product2 .p1 .p1-up:hover .heart{
+    top: 500px;
+    transition: 0.4s;
+}
+
+.box2 .box2-product2 .p1 .p1-up .heart:hover {
+    background-color: rgb(225, 53, 53);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.box2 .box2-product2 .p1 .p1-up .heart ul li{
+    list-style-type: none;
+}
+
+.box2 .box2-product2 .p1 .p1-up .heart ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.box2 .box2-product2 .p1 .p1-up .bag{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    top: 600px;
+    left: 240px;
+    transition: 0.6s;
+}
+
+
+.box2 .box2-product2 .p1 .p1-up .bag:hover a{
+    color: white;
+}
+
+.box2 .box2-product2 .p1 .p1-up:hover .bag{
+    top: 500px;
+    transition: 0.6s;
+}
+
+.box2 .box2-product2 .p1 .p1-up .bag:hover {
+    background-color: rgb(225, 53, 53);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.box2 .box2-product2 .p1 .p1-up .bag ul li{
+    list-style-type: none;
+}
+
+.box2 .box2-product2 .p1 .p1-up .bag ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.box2 .box2-product2 .p1 .p1-down{
+    width: 100%;
+    height: 200px;
+    /* background-color: cadetblue; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.box2 .box2-product2 .p1 .p1-down .name{
+    color: gray;
+    top: 30px;
+    position: absolute;
+}
+
+.box2 .box2-product2 .p1 .p1-down .name p{
+    color: gray;
+    font-size: 20px;
+}
+
+.box2 .box2-product2 .p1 .p1-down .rate{
+    color: gold;
+    position: absolute;
+    top: 60px;
+}
+
+.box2 .box2-product2 .p1 .p1-down .price{
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+}
+
+.box2 .box2-product2 .p1{
+    width: 24%;
+    height: 800px;
+    /* background-color: blueviolet; */
+}
+
+.box2 .box2-product2 .p1 .p1-up{
+    width: 100%;
+    height: 600px;
+    background-color: brown;
+    position: relative;
+}
+
+.box2 .box2-product2 .p1 .p1-up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.sale{
+    width: 70px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    top: 15px;
+    left: 15px;
+}
+
+.sale p{
+    color: white;
+    font-size: 20px;
+}
+
+.price-dis{
+    color:red;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+}
+
+.price-dis p{
+    font-size: 25px;
+}
+
+.price-real{
+    color: gray;
+    position: absolute;
+    top: 90px;
+    left: 200px;
+}
+
+.price-real{
+    font-size: 25px;
+}
+
+.box3{
+    width: 100%;
+    height: 500px;
+    background-color: brown;
+}
+
+.box3 .banner{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(42, 165, 140);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.box3 .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.box3 .banner .text {
+    position: absolute;
+    top: 150px;
+}
+
+.box3 .banner .text p{
+    color: brown;
+    font-size: 20px;
+}
+
+.box3 .banner .textstyle{
+    width: 40%;
+    height: 100px;
+    /* background-color: blueviolet; */
+    position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    top: 200px;
+    
+}
+
+.box3 .banner .textstyle .ts{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    /* background-color: brown; */
+    animation-name: run;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+}
+
+.box3 .banner .textstyle .ts1{
+    position: absolute;
+    /* top: 220px; */
+    width: 500px;
+    left: -650px;
+    /* background-color: rgb(30, 255, 0); */
+    
+}
+
+@keyframes run{
+    0%{
+        transform: translate(-200%);
+    }
+    33%{
+        transform: translate(0%);
+        transition: 5s;
+    }
+    66%{
+        transform: translate(100%);
+        transition: 5s;
+    }
+    100%{
+        transform: translate(200%);
+    }
+}
+
+.box3 .banner .textstyle .ts1 p {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.box3 .banner .textstyle .ts2{
+    position: absolute;
+    right: 0px;
+    /* top: 220px;
+    left: 50px; */
+    width: 500px;
+    left: 130px;
+    /* background-color: aqua; */
+}
+
+.box3 .banner .textstyle .ts2 p {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.box3 .banner .shopnow{
+    position: absolute;
+    top: 350px;
+}
+
+.box3 .banner .shopnow ul li {
+    list-style-type: none;
+}
+
+.box3 .banner .shopnow ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.box3 .banner .shopnow ul li a::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box3 .banner .dot-left{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 50px;
+    left: 48%;
+}
+
+.box3 .banner .dot-mid{
+    width: 10px;
+    height: 10px;
+    background-color: brown;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 50px;
+    left: 50%;
+}
+
+.box3 .banner .dot-right{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 50px;
+    left: 52%;
+}
+
+.box4-space{
+    width: 100%;
+    height: 50px;
+}
+
+.box4{
+    width: 100%;
+    height: 700px;
+    /* background-color: bisque; */
+    padding: 0px 100px;
+}
+
+.box4 .menu{
+    width: 100%;
+    height: 20%;
+    /* background-color: blue; */
+    align-items: center;
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+}
+
+.box4 .menu .menu1{
+    position: absolute;
+}
+
+.box4 .menu .menu1 p{
+    color: black;
+    font-size: 25px;
+    position: relative;
+}
+
+.box4 .menu .menu1 p::before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box4 .menu .menu2{
+    position: absolute;
+    left: 37.5%;
+}
+
+.box4 .menu .menu2 p{
+    color: black;
+    font-size: 25px;
+    position: relative;
+}
+
+.box4 .menu .menu2 p::before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box4 .menu .menu3{
+    position: absolute;
+    right: 18%;
+}
+
+.box4 .menu .menu3 p{
+    color: black;
+    font-size: 25px;
+    position: relative;
+}
+
+.box4 .menu .menu3 p::before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box4 .box4-product{
+    width: 100%;
+    height: 80%;
+    /* background-color: blueviolet; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box4 .box4-product .left{
+    width: 25%;
+    height: 100%;
+    /* background-color: brown; */
+    /* position: absolute; */
+}
+
+.box4 .box4-product .p1{
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.box4 .box4-product .p1 .p1-left{
+    width: 30%;
+    height: 100%;
+    /* background-color: cadetblue; */
+}
+
+.box4 .box4-product .p1 .p1-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box4 .box4-product .p1 .p1-right{
+    width: 60%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    position: relative;
+}
+
+.box4 .box4-product .p1 .p1-right .name{
+    position: absolute;
+}
+
+.box4 .box4-product .p1 .p1-right .name p{
+    color: gray;
+    font-size: 20px;
+}
+
+.box4 .box4-product .p1 .p1-right .rate{
+    color: gold;
+    position: absolute;
+    top: 30px;
+}
+
+.box4 .box4-product .p1 .p1-right .price{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    top: 60px;
+}
+
+.box5{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    padding: 0px 100px;
+}
+
+.box5 .box5-left
+{
+    width: 50%;
+    height: 100%;
+    background-color: bisque;
+}
+
+.box5 .box5-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box5 .box5-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    background-color: rgb(239, 238, 238);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.box5 .box5-right .circle{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box5 .box5-right .circle .discount{
+    position: absolute;
+    top: 50px;
+    color: rgb(118, 118, 118);
+    font-weight: 400;
+}
+
+.box5 .box5-right .circle .summer{
+    /* align-items: center; */
+    position: absolute;
+    top: 90px;
+    color: red;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 70px;
+    width: 390px;
+    /* background-color: blue; */
+}
+
+.box5 .box5-right .circle .sale50{
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    font-size: 20px;
+}
+
+.box5 .box5-right .circle .s50{
+    position: absolute;
+    top: 198px;
+    left: 55%;
+    color: red;
+    font-size: 20px;
+}
+
+.box5 .date1{
+    width: 100%;
+    height: 30px;
+    /* background-color: aqua; */
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    top: 370px;
+}
+
+.box5 .date1 h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    position: absolute;
+}
+
+.box5 .box5-right .date2{
+    position: absolute;
+    top: 400px;
+    left: 165px;
+}
+
+.box5 .box5-right .b5-shopnow ul li{
+    list-style-type: none;
+}
+
+.box5 .box5-right .b5-shopnow ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    top: 450px;
+    left: 370px; 
+}
+
+.box5 .box5-right .b5-shopnow ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    bottom: -10px;
+}
+
+.box6{
+    padding: 0px 100px;
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;
+}
+
+.box6 .i1{
+    display: flex;
+    width: 20%;
+    height: 60px;
+    /* background-color: blue; */
+    margin-right: 80px;
+}
+
+.box6 .i1 .i1-left
+{
+    color: red;
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* background-color: aquamarine; */
+    width: 25%;
+    height: 100%;
+}
+
+.box6 .i1 .i1-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.box6 .i1 .i1-right{
+width: 75%;
+height: 100%;
+/* background-color: brown; */
+}
+
+
+.box7 {
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+}
+
+.box7 .box7-pic{
+    width: 16.7%;
+    height: 100%;
+    background-color: blueviolet;
+    position: relative;
+}
+
+.box7 .box7-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+}
+
+.box7 .box7-pic .shadowIG{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.765);
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+}
+
+.box7 .box7-pic .shadowIG .iconig{
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+}
+
+.box7 .box7-pic .shadowIG .textig{
+    font-size: 20px;
+    top: 55%;
+    position: absolute;
+}
+
+.box7 .box7-pic:hover .shadowIG{
+    z-index: 3;
+}
+
+
+.box8{
+    width: 100%;
+    height: 300px;
+    /* background-color: aqua; */
+    /* padding: 50px 0px 0px 300px; */
+    display: flex;
+
+}
+
+.box8 .box8-0{
+    width: 15%;
+    height: 100%;
+    /* background-color: rgb(255, 115, 0); */
+}
+
+.box8 .box8-1{
+    width: 25%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#b8-logo {
+    margin-top: 50px;
+}
+
+.box8 .box8-1 p{
+    width: 90%;
+    color: gray;
+    margin: 30px 0px;
+}
+
+.box8 .box8-1 .payment1{
+    width: 50px;
+    height: 50px;
+    /* background-color: ; */
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+}
+
+.box8 .box8-1 .payment1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box8 .box8-1 .payment2{
+    width: 50px;
+    height: 50px;
+    /* background-color: ; */
+    border-radius: 50%;
+    position: absolute;
+    left: 60px;
+}
+
+.box8 .box8-1 .payment3{
+    width: 50px;
+    height: 50px;
+    /* background-color: ; */
+    border-radius: 50%;
+    position: absolute;
+    left: 120px;
+}
+
+.box8 .box8-1 .payment3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box8 .box8-1 .payment4{
+    width: 50px;
+    height: 50px;
+    /* background-color: ; */
+    border-radius: 50%;
+    position: absolute;
+    left: 180px;
+}
+
+.box8 .box8-1 .payment4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box8 .box8-1 .payment5{
+    width: 50px;
+    height: 50px;
+    /* background-color: ; */
+    border-radius: 50%;
+    position: absolute;
+    left: 240px;
+}
+
+.box8 .box8-1 .payment5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box8 .box8-1 .payment2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.box8 .box8-2{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(0, 255, 225); */
+}
+
+.box8 .box8-2 table{
+    margin-top: 30px;
+}
+
+.box8 .box8-2 table tr th{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.box8 .box8-2 table tr td{
+    color: gray;
+    font-weight: 300;
+}
+
+.box8 .box8-3{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(221, 0, 255); */
+}
+
+.box8 .box8-3 p{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box8 .box8-3 .inemail{
+    width: 400px;
+    height: 50px;
+    position: relative;
+    /* background-color: aqua; */
+    margin-top: 20px;
+}
+
+.box8 .box8-3 .inemail input{
+    position: absolute;
+   
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 25px 25px;
+    padding: 0px 20px;
+    font-size: 20px;
+    border: 2px solid gray;
+    /* border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; */
+}
+
+.box8 .box8-3 .inemail button{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    padding: 8px 30px;
+    border-radius: 25px 25px 25px 25px;
+    right: 5px;
+    top: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.box8 .box8-3 .icons ul{
+    margin-top: 20px;
+    display: flex;
+}
+
+.box8 .box8-3 .icons ul li{
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(243, 241, 241);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.box8 .box8-3 .icons ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.box8 .box8-4{
+    width: 15%;
+    height: 100%;
+    /* background-color: crimson; */
+}
+
+.box9{
+    width: 100%;
+    height: 10px;
+    /* background-color: aqua; */
+}
+
+.box9 hr{
+    width: 60%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: rgb(214, 214, 214);
+}
+
+.box10{
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+}
+

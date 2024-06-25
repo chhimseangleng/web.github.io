@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/968/002/non_2x/cute-abstract-modern-background-free-vector.jpg);
+}
+
+.box1 {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 131, 127);
+    margin: 50px 50px;
+    display: flex;
+    justify-content: space-between
+}
+
+.box1 .box1-1 {
+    width: 48%;
+    height: 100%;
+    background-color: blue;
+    object-fit: cover;
+    display: flex;
+}
+
+.box1 .box1-2 {
+    width: 48%;
+    height: 100%;
+    background-color: chartreuse;
+    object-fit: cover;
+    display: flex;
+}
+
+
+.box2 {
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    margin: 50px 50px;
+    
+}
+
+.box2 .box2-1 {
+    width: 100%;
+    height: 48%;
+    background-color: darkgoldenrod;
+    object-fit: cover;
+    display: flex;
+}
+
+.box2 .box2-2 {
+    width: 100%;
+    height: 48%;
+    background-color: forestgreen;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

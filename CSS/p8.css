@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.box {
+    width: 600px;
+    height: 400px;
+    /* background-color: aqua; */
+    margin: 20px auto;
+    padding: 10px 20px;
+    /* border: 10px solid gray; */
+}
+
+.box .head{
+    width: 100%;
+    height: 15%;
+    /* background-color: blue; */
+    align-items: center;
+    display: flex;
+    /* justify-content: center;  */
+
+}
+
+.head .b1 {
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 5px; 
+    cursor: pointer;
+    color: white;
+    box-shadow: 5px 5px 10px gray;
+    margin-right: 25px;
+    
+}
+
+.head .b2 {
+    width:100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px; 
+    cursor: pointer;
+    color: black;
+    box-shadow: 5px 5px 10px gray;
+    margin-right: 25px;
+}
+
+.head .b3 {
+    width: 90px;
+    height: 30px;
+    background-color:white;
+    border-radius: 5px; 
+    cursor: pointer;
+    color: black;
+    box-shadow: 5px 5px 10px gray;
+    margin-right: 25px;
+}
+
+.head .b4 {
+    width: 50px;
+    height: 30px;
+    background-color:white;
+    border-radius: 5px; 
+    cursor: pointer;
+    color: black;
+    box-shadow: 5px 5px 10px gray;
+    margin-right: 25px;
+}
+
+.head .b5 {
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 5px; 
+    cursor: pointer;
+    color: white;
+    box-shadow: 5px 5px 10px gray;
+    margin-right: 25px;
+}
+
+
+.head .b6 {
+    width: 90px;
+    height: 30px;
+    background-color:white;
+    border-radius: 5px; 
+    cursor: pointer;
+    color: black;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.box .buttom {
+    padding: 20px 0px;
+    width: 100%;
+    height: 85%;
+    /* background-color: blueviolet; */
+}
+
+.box .buttom .row1 {
+    width: 100%;
+    height: 45%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .buttom .row2{
+    margin-top: 30px;
+    width: 100%;
+    height: 45%;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.row1 .pic1 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.row1 .pic1 {
+    width: 30%;
+    height: 100%;
+    /* background-color: crimson; */
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 10px 5px 10px gray;
+    object-fit: cover;
+    display: flex;
+}
+
+.row1 .pic2 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.row1 .pic2 {
+    width: 30%;
+    height: 100%;
+    /* background-color: darksalmon; */
+    object-fit: cover;
+    display: flex;
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 10px 5px 10px gray;
+    
+}
+
+.row1 .pic3 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    
+}
+
+.row1 .pic3 {
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(191, 191, 191); */
+    object-fit: cover;
+    display: flex;
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 10px 5px 10px gray;
+
+}
+
+.row2 .pic1 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.row2 .pic1 {
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(220, 20, 183); */
+    object-fit: cover;
+    display: flex;
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 10px 5px 10px gray;
+    
+}
+
+.row2 .pic2 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.row2 .pic2 {
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(216, 233, 122); */
+    object-fit: cover;
+    display: flex;
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 10px 5px 10px gray;
+}
+
+.row2 .pic3 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.row2 .pic3 {
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(104, 238, 160); */
+    object-fit: cover;
+    display: flex;
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 10px 5px 10px gray;
+}

@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 300;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+.box {
+    width: 700px;
+    height: 400px;
+    background-color: chartreuse;
+    margin: 50px auto;
+}
+
+.head {
+    width: 100%;
+    height: 20%;
+    background-color: aqua;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.body {
+    width: 100%;
+    height: 80%;
+    background-color: burlywood;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.box1 {
+    width: 23%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+.box1-up{
+    width: 100%;
+    height: 60%;
+    background-color: khaki;
+}
+
+.box1-down{
+    width: 100%;
+    height: 40%;
+    background-color: darksalmon;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box2 {
+    width: 23%;
+    height: 100%;
+    background-color: chocolate;
+}
+
+.box2-up{
+    width: 100%;
+    height: 60%;
+    background-color: khaki;
+}
+
+.box2-down{
+    width: 100%;
+    height: 40%;
+    background-color: darksalmon;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box3 {
+    width: 23%;
+    height: 100%;
+    background-color: crimson;
+}
+
+.box3-up{
+    width: 100%;
+    height: 60%;
+    background-color: khaki;
+}
+
+.box3-down{
+    width: 100%;
+    height: 40%;
+    background-color: darksalmon;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box4 {
+    width: 23%;
+    height: 100%;
+    background-color: darkcyan;
+}
+
+.box4-up{
+    width: 100%;
+    height: 60%;
+    background-color: khaki;
+}
+
+.box4-down{
+    width: 100%;
+    height: 40%;
+    background-color: darksalmon;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            /* color: red; */
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            border: 2px solid gray;
+            padding: 10px;
+            /* margin: auto; */
+            /* margin: 20px;  */
+            /* margin: 10px 20px;  */
+            /* 10px is top and down and 20px is left and right */
+            /* margin: 10px 20px 30px 40px; */
+            /* 10 is top 20 is right 30 is down 40 is left */
+            margin: 0 auto;
+
+            width: 500px;
+            height: 500px;
+            /* background: linear-gradient(pink,lightblue,lightgreen); */
+        }
+        .box .box1{
+            width: 100%;
+            height: 15%;
+            /* background-color: brown; */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .box .box2{
+            padding: 10px;
+            width: 100%;
+            height: 60%;
+            /* background-color: blueviolet; */
+            
+        }
+        .box .box2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* object-fit: cover; */
+        }
+        .box .box3{
+            padding: 10px;
+            width: 100%;
+            height: 25%;
+            /* background-color: aquamarine; */
+            border: 5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <h1>Welcome</h1>
+        </div>
+        <div class="box2">
+            <img src="../IMG/pix.jpg" alt="">
+        </div>
+        <div class="box3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae exercitationem tenetur sapiente provident deleniti inventore, optio tempora tempore rerum nam consequatur earum adipisci aliquam quibusdam maiores maxime, assumenda quam?</p>
+        </div>
+    </div>
+</body>
+</html>
