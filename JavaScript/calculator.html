@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <style>
+        *{
+            box-sizing:border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 350px;
+            height: 550px;
+            background-color: #a51010;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 50px 50px;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 30px;
+            padding: 50px 20px 30px 20px;
+            box-shadow: 1px 1px 7px rgba(160, 159, 159, 0.825);
+        }
+        .box1{
+            width: 100%;
+            height: 15%;
+            background-color: #f4edf2;
+            border-radius: 20px;
+            font-size: 35px;
+            color: black;
+            text-align: right;
+            border: none;
+            box-shadow: 1px 1px 3px rgba(255, 0, 0, 0.915);
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .box2{
+            width: 100%;
+            height: 13%;
+            justify-content:space-between;
+            display: flex;
+            margin-top: 15px;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            border: none;
+            box-shadow: 1px 1px 3px rgb(255, 10, 10);
+            font-weight: bold;
+        }
+        button:active{
+            box-shadow: 1px 1px 3px rgb(0, 0, 0);
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input class="box1" id="inputV" placeholder="0" readonly></input>
+            <div class="box2">
+                <button type="button" onclick="Clear()">Clear</button>
+                <button type="button" onclick="del()">Del</button>
+                <button type="button" onclick="show('%')">%</button>
+                <button type="button" onclick="show('/')">/</button>
+            </div>
+            <div class="box2">
+                <button type="button" onclick="show('7')">7</button>
+                <button type="button" onclick="show('8')">8</button>
+                <button type="button" onclick="show('9')">9</button>
+                <button type="button" onclick="show('*')">x</button>
+            </div>
+            <div class="box2">
+                <button type="button" onclick="show('4')">4</button>
+                <button type="button" onclick="show('5')">5</button>
+                <button type="button" onclick="show('6')">6</button>
+                <button type="button" onclick="show('-')">-</button>
+            </div>
+            <div class="box2">
+                <button type="button" onclick="show('1')">1</button>
+                <button type="button" onclick="show('2')">2</button>
+                <button type="button" onclick="show('3')">3</button>
+                <button type="button" onclick="show('+')">+</button>
+            </div>
+            <div class="box2">
+                <button type="button" onclick="show('0')">0</button>
+                <button type="button" onclick="show('00')">00</button>
+                <button type="button" onclick="show('.')">.</button>
+                <button type="button" onclick="calculate()" style="background-color: lightskyblue;">=</button>
+            </div>
+        </div> 
+    </div>
+</body>
+<script>
+    let display = document.querySelector('#inputV');
+    // console.log(inputtext);
+    function show(val){
+        display.value = display.value + val;
+    }
+    function Clear(){
+        display.value="";
+    }
+    function calculate(){
+        let result = eval(display.value);
+        display.value = result;
+    }
+    function del(){
+        display.value = display.value.slice(0,-1);  
+    }
+</script>
+</html>

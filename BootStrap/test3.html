@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container bg-light py-5">
+        <h2 class="text-center display-4 fw-bold text-primary text-decoration-underline">Product</h2>
+        
+        
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary float-end mb-4 shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add Product
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <label for="" class="form-label">ID</label>
+                <input type="text" name="id" id="" placeholder="Enter ID" class="form-control mb-3 shadow-none">
+
+                <label for="" class="form-label">Name</label>
+                <input type="text" name="name" id="" placeholder="Enter Name" class="form-control mb-3 shadow-none">
+
+                <label for="" class="form-label">QTY</label>
+                <input type="text" name="qty" id="" placeholder="Enter Qty" class="form-control mb-3 shadow-none">
+
+                <label for="" class="form-label">Price</label>
+                <input type="text" name="price" id="" placeholder="Enter Price" class="form-control mb-3 shadow-none">
+
+                <label for="" class="form-label">Total</label>
+                <input type="text" name="id" id="" placeholder="Enter ID" class="form-control mb-3 shadow-none " readonly>
+
+                <label for="form-label">Image</label>
+                <input type="file" name="image" id="" class="form-control mb-3 shadow-none">
+
+
+
+            </form>
+        </div>
+        <div class="float-end mb-5">
+            <div class="float-end mb-5 me-3">
+                <button type="button" class="btn-danger btn me-4">Cancel</button>
+                <button type="button" class="btn-success  btn ">Submit</button>
+            </div>
+                </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+        <table class="table align-middle table-hover table-bordered text-center mt-5 table-info">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Sting</td>
+                    <td>10</td>
+                    <td>0.5$</td>
+                    <td>5.00$</td>
+                    <td><img src="../IMG/sting.jpg" alt="" class="rounded" width="100px" height="100px"></td>
+                    <td>
+                        <button class="btn-outline-warning me-3 btn">Update</button>
+                        <button class="btn-outline-danger btn">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>1001</td>
+                    <td>Sting</td>
+                    <td>10</td>
+                    <td>0.5$</td>
+                    <td>5.00$</td>
+                    <td><img src="../IMG/sting.jpg" alt="" class="rounded" width="100px" height="100px"></td>
+                    <td>
+                        <button class="btn-outline-warning me-3 btn">Update</button>
+                        <button class="btn-outline-danger btn">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>1001</td>
+                    <td>Sting</td>
+                    <td>10</td>
+                    <td>0.5$</td>
+                    <td>5.00$</td>
+                    <td><img src="../IMG/sting.jpg" alt="" class="rounded" width="100px" height="100px"></td>
+                    <td>
+                        <button class="btn-outline-warning me-3 btn">Update</button>
+                        <button class="btn-outline-danger btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</html>

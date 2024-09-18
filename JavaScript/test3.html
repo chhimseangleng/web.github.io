@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../BootStrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container text-center mt-5" >
+        <h1>hello</h1>
+        <button type="button" class="btn btn-primary" onclick="
+          design()
+        ">1 click</button>
+        <button type="button" class="btn btn-danger" ondblclick="
+            clearme();
+        ">2 click</button>
+    </div>
+    
+</body>
+<script>
+    let tagh1 = document.querySelector('h1');
+    console.log(tagh1);
+
+    function design(){
+        let x = tagh1.style;
+        x.border="2px solid red";
+        x.color="blue";
+        x.textShadow = "3px 5px 3px gray";
+        tagh1.innerHTML =" hello crush";
+    }
+
+    function clearme(){
+        let x = tagh1.style;
+        x.border="none";
+        x.color="";
+        x.textShadow = "";
+        tagh1.innerHTML =" hello";
+    }
+</script>
+</html>

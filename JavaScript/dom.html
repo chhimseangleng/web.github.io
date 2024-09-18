@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p align="center">Hello</p>
+    <h1 id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dignissimos?</h1>
+    <div class="demo1"></div>
+    
+</body>
+<script>
+
+    
+    // jab tam tag , id , class
+
+    // ============ tag ===================
+    let tagp = document.getElementsByTagName('p')[0];
+    console.log(tagp);
+
+    tagp.innerHTML = "Leng ng hah";
+    tagp.innerHTML = "<h1>love u</h1>";
+    // to change content have 2 stype (innerHTML and innertext) but innertext cannot change the tag
+
+    // ================= id ===============
+    let demo = document.getElementById('demo');
+    
+    console.log(demo);
+    demo.style.color="red";
+
+    //================ class ===============
+    let demo1 = document.getElementsByClassName('demo1')[0];
+
+    console.log(demo1);
+
+    demo1.innerHTML = "This is a class";
+
+    demo1.style.color="green";
+    demo1.style.backgroundColor = "blue";
+
+
+</script>
+</html>

@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../BootStrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+</head>
+<body>
+   
+    
+</body>
+<script>
+    let id,name,sex,salary,position,bonus,total;
+    id = prompt("ID:");
+    name = prompt("Name:");
+    sex = prompt("Sex:");
+    salary = parseFloat(prompt("Salary:"));
+    position = prompt("Position:");
+
+    if(position == "Manager" || position == "manager"){
+        bonus = 20;
+    }
+
+    else if(position == "Account" || position == "account"){
+        bonus = 15;
+    }
+
+    else if(position == "IT")
+    {
+        bonus = 25;
+    }
+    else{
+        bonus = 10;
+    }
+
+    total = salary + ((salary*bonus)/100);
+
+    document.write(`
+    
+     <table class="table w-50">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Sex</th>
+                <th>Salary</th>
+                <th>Position</th>
+                <th>Bonus</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>${id}</td>
+                <td>${name}</td>
+                <td>${sex}</td>
+                <td>${salary}$</td>
+                <td>${position}</td>
+                <td>${bonus}%</td>
+                <td>${total}$</td>
+            </tr>
+        </tbody>
+    </table>
+
+    `);
+
+</script>
+</html>

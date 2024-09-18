@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: firebrick;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Box</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem totam fugit explicabo libero itaque ipsum? Numquam alias corporis odit ut?</p> -->
+    </div>
+</body>
+<script>
+    //id , tag , class
+    let box = document.querySelector('.box');
+    // console.log(box);
+    box.style.backgroundColor = "blue";
+
+    let box1 = document.createElement('div');
+    box1.className = "box1";
+
+    // console.log(box1);
+
+    box.appendChild(box1);
+
+    box1.style.width = "100px";
+    box1.style.height = "100px";
+    box1.style.backgroundColor = "brown";
+
+    let box2 = document.createElement('div');
+    box2.className = "box2";
+
+    box2.style.width = "100px";
+    box2.style.height = "100px";
+    box2.style.backgroundColor = "green";
+
+    let body = document.querySelector('body');
+    console.log(body);  
+
+    body.appendChild(box2);
+    
+</script>
+</html>

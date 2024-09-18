@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../BootStrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="card box">
+                    <img src="../IMG/Angkor Wat, Cambodia_ Tips and Travel Advice.jpg" class="img-thumbnail img-bg" alt="">
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-warning btn_click">Click</button>
+        </div>
+    </div>
+</body>
+<script>
+    let box = document.querySelector('.box');
+    let img = document.querySelector('.img-bg');
+    
+    box.addEventListener('mouseover', function()
+    {
+        img.src="../IMG/aipod.jpg";
+    });
+
+    box.addEventListener('mouseleave', function()
+    {
+        img.src="../IMG/Angkor Wat, Cambodia_ Tips and Travel Advice.jpg";
+    });
+
+    box.addEventListener('onclick', function()
+    {
+        img.src="../IMG/bg-naruto.jpg";
+    });
+
+    let btn_click = document.querySelector("");
+</script>
+</html>

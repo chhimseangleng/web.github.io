@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //there are 2 type of declare array
+    //1.
+    // let name = Array("leng","ya","kim");
+    //... use to check all value of array
+    // console.log(...name);
+    // console.log(name[0]);
+    //2.
+    let a = [1,2,3,4,5];
+    // console.log(...a);
+    // console.log(a[1]);
+    
+    //for loop
+    // for(let i = 0 ; i<a.length ; i++){
+    //     console.log(a[i]);
+    // }
+
+    //for in 
+    // for(let i in a){
+    //     console.log(a[i]);
+    // }
+
+    //for of
+    // for(let i of a){
+    //     console.log(i);
+    // }
+
+    //there are 2 style we can get value or index;
+    //get value
+    // a.forEach(element => {
+    //     console.log(element);
+    // });
+
+    // console.log("=============");
+
+    //get index but we need to put in the () to clearify betweeen element and i , element is the value and i is the index of array
+    a.forEach((element,i) => {
+        console.log(i);
+    });
+    console.log("=============");
+
+    a.forEach((element,i) => {
+        console.log(i,element);
+    });
+</script>
+</html>
